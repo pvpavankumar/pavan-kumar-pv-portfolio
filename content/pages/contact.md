@@ -29,6 +29,9 @@ sections:
         label: View GitHub
         url: 'https://github.com/pvpavankumar'
       - type: Link
+        label: Connect on LinkedIn
+        url: 'https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419'
+      - type: Link
         label: Download résumé
         url: '/venkata-pavan-kumar-resume.pdf'
     styles:
@@ -49,6 +52,8 @@ sections:
       **Location:** Hyderabad, Telangana, India
 
       **GitHub:** [github.com/pvpavankumar](https://github.com/pvpavankumar)
+
+      **LinkedIn:** [linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419](https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419)
 
       I welcome relevant full-time leadership and staff-engineering conversations. Please include the role, location or remote-work expectations, and a brief description of the product or platform challenge.
     styles:
