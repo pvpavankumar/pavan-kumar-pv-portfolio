@@ -133,6 +133,21 @@ layer(base);
         color: #9fc5e8;
     }
 
+    header a svg,
+    footer a svg {
+        transition: transform 180ms ease, color 180ms ease;
+    }
+
+    header a:hover svg,
+    footer a:hover svg {
+        transform: translateY(-1px);
+    }
+
+    header [aria-label*='LinkedIn'],
+    header [aria-label*='GitHub'] {
+        font-size: 1.05rem;
+    }
+
     main > [data-theme]:first-child {
         position: relative;
         overflow: hidden;
@@ -277,6 +292,16 @@ layer(base);
     }
 
     footer a:hover {
+        color: #9fc5e8;
+    }
+
+    footer li a {
+        gap: 0.55rem;
+        font-size: 0.95rem;
+        letter-spacing: 0.035em;
+    }
+
+    footer li a svg {
         color: #9fc5e8;
     }
 
