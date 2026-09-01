@@ -34,8 +34,8 @@ const Component: React.FC<ComponentProps> = (props) => {
 
     return (
         <BaseLayout {...props}>
-            <article className="px-4 py-14 lg:py-20">
-                <header className="max-w-5xl mx-auto mb-10 sm:mb-14">
+            <article className="px-4 py-16 lg:py-20">
+                <header className="max-w-5xl mx-auto mb-10 sm:mb-12">
                     {client && <div className="text-lg uppercase md:mb-6">{client}</div>}
                     <div className="flex flex-col gap-6 md:flex-row md:justify-between">
                         <time className="text-lg md:order-last" dateTime={dateTimeAttr}>
@@ -45,10 +45,10 @@ const Component: React.FC<ComponentProps> = (props) => {
                     </div>
                 </header>
                 {description && (
-                    <div className="max-w-3xl mx-auto mb-10 text-lg uppercase sm:text-xl sm:mb-14">{description}</div>
+                    <div className="max-w-3xl mx-auto mb-10 text-lg uppercase sm:text-xl sm:mb-12">{description}</div>
                 )}
                 {media && (
-                    <figure className="max-w-5xl mx-auto mb-10 sm:mb-14">
+                    <figure className="max-w-5xl mx-auto mb-10 sm:mb-12">
                         <ProjectMedia media={media} />
                     </figure>
                 )}
@@ -62,7 +62,7 @@ const Component: React.FC<ComponentProps> = (props) => {
                 )}
             </article>
             {(prevProject || nextProject) && (
-                <nav className="px-4 mt-12 mb-20">
+                <nav className="px-4 mt-16 mb-20">
                     <div className="grid max-w-5xl mx-auto gap-x-6 gap-y-12 sm:grid-cols-2 lg:gap-x-8">
                         {prevProject && <ProjectNavItem project={prevProject} className={undefined} />}
                         {nextProject && (
