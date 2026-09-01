@@ -14,6 +14,15 @@ layer(base);
     --spacing-icon: 1em;
 }
 
+:root {
+    --space-page-gutter: clamp(1rem, 3vw, 2rem);
+    --space-section: clamp(4rem, 7vw, 6rem);
+    --space-section-hero: clamp(5rem, 9vw, 8rem);
+    --space-stack-sm: 0.75rem;
+    --space-stack-md: 1.5rem;
+    --space-stack-lg: 2.5rem;
+}
+
 @layer base {
     html {
         @apply antialiased font-body;
@@ -155,6 +164,21 @@ layer(base);
     main > [data-theme]:first-child {
         position: relative;
         overflow: hidden;
+    }
+
+    main > [data-theme] {
+        padding-right: var(--space-page-gutter) !important;
+        padding-left: var(--space-page-gutter) !important;
+    }
+
+    main > [data-theme]:not(:first-child) {
+        padding-top: var(--space-section) !important;
+        padding-bottom: var(--space-section) !important;
+    }
+
+    main > [data-theme]:first-child {
+        padding-top: var(--space-section-hero) !important;
+        padding-bottom: var(--space-section-hero) !important;
     }
 
     main > [data-theme]:first-child::after {
@@ -336,7 +360,7 @@ layer(base);
     }
 
     #home-hero {
-        min-height: 46rem;
+        min-height: 42rem;
     }
 
     #home-hero::before {
@@ -380,6 +404,20 @@ layer(base);
         border-radius: 0.75rem;
         background: #ffffff;
         box-shadow: 0 8px 26px rgba(20, 36, 58, 0.055);
+    }
+
+    #home-impact > div > div.grid,
+    #leadership-impact > div > div.grid,
+    #collaboration-options > div > div.grid,
+    #leadership-model > div > div.grid {
+        align-items: stretch;
+    }
+
+    #home-impact article,
+    #leadership-impact article,
+    #collaboration-options article,
+    #leadership-model article {
+        height: 100%;
     }
 
     #home-impact h2 {
@@ -526,6 +564,11 @@ layer(base);
         color: #d9e1e9;
     }
 
+    footer {
+        padding-right: var(--space-page-gutter) !important;
+        padding-left: var(--space-page-gutter) !important;
+    }
+
     footer > div {
         border-color: #314054 !important;
     }
@@ -576,6 +619,16 @@ layer(base);
 
         #home-hero::before {
             display: none;
+        }
+
+        main > [data-theme]:not(:first-child) {
+            padding-top: 3.5rem !important;
+            padding-bottom: 3.5rem !important;
+        }
+
+        main > [data-theme]:first-child {
+            padding-top: 4.5rem !important;
+            padding-bottom: 4.5rem !important;
         }
     }
 }
