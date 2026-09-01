@@ -150,35 +150,49 @@ sections:
         width: wide
         padding: [pt-12, pb-12, pl-4, pr-4]
   - type: FeaturedItemsSection
-    subtitle: Connect
+    elementId: connect-panel
+    title: Let’s connect
+    subtitle: Choose the most useful way to continue the conversation.
     colors: colors-f
     items:
       - type: FeaturedItem
+        title: GitHub
+        subtitle: Explore my code
+        text: Review personal projects spanning full-stack platforms, frontend engineering, and applied AI.
         actions:
-          - { type: Link, label: GitHub, url: 'https://github.com/pvpavankumar' }
+          - { type: Link, label: View GitHub, url: 'https://github.com/pvpavankumar', showIcon: true, icon: github, iconPosition: left }
         styles:
           self: { textAlign: left }
       - type: FeaturedItem
+        title: LinkedIn
+        subtitle: Connect professionally
+        text: Follow my engineering journey and reach out about staff-level or leadership opportunities.
         actions:
-          - { type: Link, label: LinkedIn, url: 'https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419' }
+          - { type: Link, label: Open LinkedIn, url: 'https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419', showIcon: true, icon: linkedin, iconPosition: left }
         styles:
           self: { textAlign: left }
       - type: FeaturedItem
+        title: Email
+        subtitle: Start a conversation
+        text: Share the role, platform challenge, location, and remote-work expectations for a focused response.
         actions:
-          - { type: Link, label: Email, url: 'mailto:pasumarthi.kumar@gmail.com' }
+          - { type: Link, label: Email me, url: 'mailto:pasumarthi.kumar@gmail.com', showIcon: true, icon: mail, iconPosition: left }
         styles:
           self: { textAlign: left }
       - type: FeaturedItem
+        title: Résumé
+        subtitle: Review my experience
+        text: Download a concise PDF covering my experience, technical strengths, leadership, and outcomes.
         actions:
-          - { type: Link, label: Download résumé (PDF), url: '/venkata-pavan-kumar-resume.pdf' }
+          - { type: Link, label: Download PDF, url: '/venkata-pavan-kumar-resume.pdf', showIcon: true, icon: download, iconPosition: left }
         styles:
           self: { textAlign: left }
     columns: 4
-    spacingX: 64
-    spacingY: 16
+    spacingX: 20
+    spacingY: 20
     styles:
       self:
         height: auto
         width: wide
-        padding: [pt-8, pb-16, pl-4, pr-4]
+        padding: [pt-16, pb-16, pl-4, pr-4]
 ---
