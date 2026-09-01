@@ -8,6 +8,7 @@ export const PAGE_MODEL_NAMES = ['PageLayout', 'PostFeedLayout', 'PostLayout', '
 
 export type SectionModels =
     | ContactSection
+    | CoverLetterSection
     | CtaSection
     | DividerSection
     | FeaturedItemsSection
@@ -29,6 +30,7 @@ export type ContentObject =
     | Config
     | ContactBlock
     | ContactSection
+    | CoverLetterSection
     | CtaSection
     | DividerSection
     | EmailFormControl
@@ -74,6 +76,7 @@ export type ContentObjectType =
     | 'Config'
     | 'ContactBlock'
     | 'ContactSection'
+    | 'CoverLetterSection'
     | 'CtaSection'
     | 'DividerSection'
     | 'EmailFormControl'
@@ -149,6 +152,7 @@ export type Button = BaseContentObject & {
         | 'chevronLeft'
         | 'chevronRight'
         | 'download'
+        | 'document'
         | 'facebook'
         | 'github'
         | 'googlePlay'
@@ -348,10 +352,20 @@ export type ImageBlock = BaseContentObject & {
     elementId?: string;
 };
 
+export type CoverLetterSection = BaseContentObject & {
+    type: 'CoverLetterSection';
+    title?: string;
+    subtitle?: string;
+    colors?: 'colors-a' | 'colors-b' | 'colors-c' | 'colors-d' | 'colors-e' | 'colors-f';
+    elementId?: string;
+    styles?: any;
+};
+
 export type Label = BaseContentObject & {
     type: 'Label';
     label: string;
     url?: string;
+    icon?: 'accessibility' | 'briefcase' | 'checkCircle' | 'code' | 'gauge' | 'layers' | 'sparkles' | 'user' | 'workflow';
 };
 
 export type LabelsSection = BaseContentObject & {
@@ -383,6 +397,7 @@ export type Link = BaseContentObject & {
         | 'chevronLeft'
         | 'chevronRight'
         | 'download'
+        | 'document'
         | 'facebook'
         | 'github'
         | 'googlePlay'

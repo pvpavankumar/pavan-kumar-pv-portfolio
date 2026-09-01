@@ -10,6 +10,7 @@
     "primaryLinks": [
       { "type": "Link", "label": "About", "url": "/info", "showIcon": true, "icon": "user", "iconPosition": "left" },
       { "type": "Link", "label": "Projects", "url": "/projects", "showIcon": true, "icon": "briefcase", "iconPosition": "left" },
+      { "type": "Link", "label": "Cover letter", "url": "/cover-letter", "showIcon": true, "icon": "document", "iconPosition": "left" },
       { "type": "Link", "label": "Download résumé", "url": "/venkata-pavan-kumar-resume.pdf", "showIcon": true, "icon": "download", "iconPosition": "left" },
       { "type": "Link", "label": "Contact", "url": "/contact", "showIcon": true, "icon": "mail", "iconPosition": "left" }
     ],
@@ -36,6 +37,7 @@
     "primaryLinks": [
       { "type": "Link", "label": "About", "url": "/info", "altText": "About Pavan Kumar", "showIcon": true, "icon": "user", "iconPosition": "left" },
       { "type": "Link", "label": "Projects", "url": "/projects", "altText": "View Pavan Kumar's projects", "showIcon": true, "icon": "briefcase", "iconPosition": "left" },
+      { "type": "Link", "label": "Cover letter builder", "url": "/cover-letter", "altText": "Customize and download a cover letter", "showIcon": true, "icon": "document", "iconPosition": "left" },
       { "type": "Link", "label": "Download résumé", "url": "/venkata-pavan-kumar-resume.pdf", "altText": "Download Pavan Kumar's résumé as a PDF", "showIcon": true, "icon": "download", "iconPosition": "left" },
       { "type": "Link", "label": "Contact", "url": "/contact", "altText": "Contact Pavan Kumar", "showIcon": true, "icon": "mail", "iconPosition": "left" },
       { "type": "Link", "label": "LinkedIn", "url": "https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419", "altText": "Pavan Kumar on LinkedIn", "showIcon": true, "icon": "linkedin", "iconPosition": "left" },

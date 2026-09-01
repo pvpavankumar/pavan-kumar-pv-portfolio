@@ -764,6 +764,267 @@ layer(base);
     }
 }
 
+@layer components {
+    #core-expertise {
+        background:
+            radial-gradient(circle at 94% 18%, rgba(66, 133, 190, 0.11), transparent 28%),
+            #f3f6fa;
+    }
+
+    #core-expertise .expertise-chip {
+        gap: 0.65rem;
+        border-color: #c7d5e3;
+        background: rgba(255, 255, 255, 0.9);
+        color: #1b2b41;
+        box-shadow: 0 6px 18px rgba(20, 36, 58, 0.05);
+    }
+
+    #core-expertise .expertise-chip-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        flex: 0 0 2rem;
+        border-radius: 0.65rem;
+        background: #e5f0fa;
+        color: #1f5a8d;
+    }
+
+    #cover-letter-builder {
+        background:
+            linear-gradient(125deg, rgba(225, 238, 249, 0.85), transparent 46%),
+            #f5f7fa;
+    }
+
+    .cover-letter-heading {
+        max-width: 780px;
+        margin-bottom: 2.5rem;
+    }
+
+    .cover-letter-heading h2 {
+        margin-top: 0.8rem;
+        font-size: clamp(2.5rem, 4.6vw, 4.75rem);
+        letter-spacing: -0.045em;
+    }
+
+    .cover-letter-heading > p {
+        margin-top: 1rem;
+        color: #52647a;
+        font-size: 1.15rem;
+        line-height: 1.75;
+    }
+
+    .cover-letter-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        color: #1f5a8d;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+    }
+
+    .cover-letter-builder {
+        display: grid;
+        grid-template-columns: minmax(320px, 0.78fr) minmax(440px, 1.22fr);
+        gap: clamp(1.5rem, 3vw, 3rem);
+        align-items: start;
+    }
+
+    .cover-letter-form,
+    .cover-letter-preview {
+        border: 1px solid #d4dee8;
+        background: #fff;
+        box-shadow: 0 18px 48px rgba(20, 36, 58, 0.09);
+    }
+
+    .cover-letter-form {
+        padding: clamp(1.25rem, 2.6vw, 2rem);
+        border-radius: 1rem;
+    }
+
+    .cover-letter-form-title {
+        display: flex;
+        gap: 0.9rem;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.35rem;
+        border-bottom: 1px solid #e1e8ef;
+    }
+
+    .cover-letter-form-title > span {
+        display: inline-flex;
+        padding: 0.7rem;
+        border-radius: 0.75rem;
+        background: #e5f0fa;
+        color: #1f5a8d;
+    }
+
+    .cover-letter-form-title h3 {
+        font-size: 1.25rem;
+    }
+
+    .cover-letter-form-title p,
+    .cover-letter-privacy {
+        margin-top: 0.3rem;
+        color: #637389;
+        font-size: 0.83rem;
+        line-height: 1.5;
+    }
+
+    .cover-letter-form label {
+        display: block;
+        margin-top: 1rem;
+        color: #1b2b41;
+        font-size: 0.85rem;
+        font-weight: 750;
+    }
+
+    .cover-letter-form input,
+    .cover-letter-form textarea {
+        display: block;
+        width: 100%;
+        margin-top: 0.45rem;
+        padding: 0.78rem 0.9rem;
+        border: 1px solid #bdcad8;
+        border-radius: 0.55rem;
+        outline: none;
+        background: #fbfcfe;
+        color: #172033;
+        font: inherit;
+        font-weight: 500;
+        line-height: 1.5;
+        resize: vertical;
+    }
+
+    .cover-letter-form input:focus,
+    .cover-letter-form textarea:focus {
+        border-color: #2a6ba2;
+        box-shadow: 0 0 0 3px rgba(42, 107, 162, 0.14);
+    }
+
+    .cover-letter-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+        margin-top: 1.35rem;
+    }
+
+    .cover-letter-actions button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.55rem;
+        min-height: 3rem;
+        padding: 0.7rem 0.9rem;
+        border: 1px solid #1f5a8d;
+        border-radius: 0.55rem;
+        font-size: 0.85rem;
+        font-weight: 800;
+        transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .cover-letter-actions button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(20, 36, 58, 0.12);
+    }
+
+    .cover-letter-primary {
+        background: #163f68;
+        color: #fff;
+    }
+
+    .cover-letter-secondary {
+        background: #fff;
+        color: #163f68;
+    }
+
+    .cover-letter-preview {
+        position: relative;
+        min-height: 720px;
+        padding: clamp(2rem, 4vw, 4.5rem);
+        color: #25354a;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 0.98rem;
+        line-height: 1.72;
+    }
+
+    .cover-letter-preview-label {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.35rem 0.6rem;
+        border-radius: 999px;
+        background: #e5f0fa;
+        color: #1f5a8d;
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.68rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .cover-letter-preview header {
+        margin-bottom: 2.25rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid #1f5a8d;
+    }
+
+    .cover-letter-preview header h3 {
+        color: #15283e;
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.45rem;
+        letter-spacing: -0.025em;
+    }
+
+    .cover-letter-preview header p {
+        margin-top: 0.35rem;
+        color: #627187;
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.78rem;
+    }
+
+    .cover-letter-preview > p {
+        margin-bottom: 1.15rem;
+    }
+
+    .cover-letter-signoff {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 900px) {
+        .cover-letter-builder {
+            grid-template-columns: 1fr;
+        }
+
+        .cover-letter-preview {
+            min-height: auto;
+        }
+    }
+
+    @media (max-width: 560px) {
+        .cover-letter-actions {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media print {
+    body * { visibility: hidden !important; }
+    .cover-letter-preview, .cover-letter-preview * { visibility: visible !important; }
+    .cover-letter-preview {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        min-height: 0;
+        border: 0;
+        box-shadow: none;
+    }
+    .cover-letter-preview-label { display: none !important; }
+}
+
 @layer utilities {
     .prose {
         --tw-prose-body: var(--text-color-main);

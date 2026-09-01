@@ -2,6 +2,7 @@ import classNames from 'classnames';
 
 import { Annotated } from '@/components/Annotated';
 import { Link } from '@/components/atoms';
+import { iconMap } from '@/components/svgs';
 import { mapStylesToClassNames as mapStyles } from '@/utils/map-styles-to-class-names';
 import Section from '../Section';
 
@@ -40,7 +41,8 @@ export default function LabelsSection(props) {
 }
 
 function LabelItem(props) {
-    const { label, url } = props;
+    const { label, url, icon } = props;
+    const IconComponent = icon ? iconMap[icon] : null;
     if (!label) {
         return null;
     }
@@ -50,12 +52,14 @@ function LabelItem(props) {
             {url ? (
                 <Link
                     href={url}
-                    className="inline-flex relative text-base leading-tight no-underline transition rounded-full py-3 px-4 border border-current hover:-translate-y-0.5"
+                    className="expertise-chip inline-flex relative items-center text-base leading-tight no-underline transition rounded-full py-3 px-4 border border-current hover:-translate-y-0.5"
                 >
+                    {IconComponent && <span className="expertise-chip-icon"><IconComponent className="h-5 w-5" /></span>}
                     {label}
                 </Link>
             ) : (
-                <div className="inline-flex px-4 py-3 text-base leading-tight border border-current rounded-full">
+                <div className="expertise-chip inline-flex items-center px-4 py-3 text-base leading-tight border border-current rounded-full">
+                    {IconComponent && <span className="expertise-chip-icon"><IconComponent className="h-5 w-5" /></span>}
                     {label}
                 </div>
             )}

@@ -73,23 +73,24 @@ sections:
         padding: [pt-16, pb-16, pl-4, pr-4]
         textAlign: left
   - type: LabelsSection
+    elementId: core-expertise
     colors: colors-f
     subtitle: Core expertise
     items:
-      - { type: Label, label: React }
-      - { type: Label, label: JavaScript ES6+ }
-      - { type: Label, label: Node.js }
-      - { type: Label, label: ServiceNow }
-      - { type: Label, label: SAP CPQ }
-      - { type: Label, label: Headless architecture }
-      - { type: Label, label: Micro-frontends }
-      - { type: Label, label: Performance engineering }
-      - { type: Label, label: WCAG accessibility }
-      - { type: Label, label: Jest & CodeceptJS }
-      - { type: Label, label: CI/CD }
-      - { type: Label, label: GenAI automation }
-      - { type: Label, label: Agentic AI }
-      - { type: Label, label: Technical leadership }
+      - { type: Label, label: React, icon: code }
+      - { type: Label, label: JavaScript ES6+, icon: code }
+      - { type: Label, label: Node.js, icon: code }
+      - { type: Label, label: ServiceNow, icon: layers }
+      - { type: Label, label: SAP CPQ, icon: layers }
+      - { type: Label, label: Headless architecture, icon: layers }
+      - { type: Label, label: Micro-frontends, icon: workflow }
+      - { type: Label, label: Performance engineering, icon: gauge }
+      - { type: Label, label: WCAG accessibility, icon: accessibility }
+      - { type: Label, label: Jest & CodeceptJS, icon: checkCircle }
+      - { type: Label, label: CI/CD, icon: workflow }
+      - { type: Label, label: GenAI automation, icon: sparkles }
+      - { type: Label, label: Agentic AI, icon: sparkles }
+      - { type: Label, label: Technical leadership, icon: user }
     styles:
       self:
         width: wide
