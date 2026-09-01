@@ -176,7 +176,7 @@ sections:
         subtitle: Start a conversation
         text: Share the role, platform challenge, location, and remote-work expectations for a focused response.
         actions:
-          - { type: Link, label: Email me, url: 'mailto:pasumarthi.kumar@gmail.com', showIcon: true, icon: mail, iconPosition: left }
+          - { type: Link, label: Copy email, altText: 'Copy Pavan Kumar email address', url: 'mailto:pasumarthi.kumar@gmail.com', showIcon: true, icon: mail, iconPosition: left }
         styles:
           self: { textAlign: left }
       - type: FeaturedItem
