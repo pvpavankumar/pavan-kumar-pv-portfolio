@@ -137,7 +137,12 @@ sections:
           - { type: Link, label: Email, url: 'mailto:pasumarthi.kumar@gmail.com' }
         styles:
           self: { textAlign: left }
-    columns: 2
+      - type: FeaturedItem
+        actions:
+          - { type: Link, label: Download résumé (PDF), url: '/venkata-pavan-kumar-resume.pdf' }
+        styles:
+          self: { textAlign: left }
+    columns: 3
     spacingX: 64
     spacingY: 16
     styles:
