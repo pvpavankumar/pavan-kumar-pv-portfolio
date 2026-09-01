@@ -90,6 +90,7 @@ function ProjectGrid(props) {
                             <ProjectDate date={project.date} />
                         </div>
                     )}
+                    {project.client && <p className="project-client mb-3">{project.client}</p>}
                     <TitleTag className="text-3xl sm:text-4xl">{project.title}</TitleTag>
                     {showDescription && project.description && <p className="mt-5 text-lg">{project.description}</p>}
                     {showReadMoreLink && (
@@ -144,6 +145,7 @@ function ProjectList(props) {
                                     <ProjectDate date={project.date} />
                                 </div>
                             )}
+                            {project.client && <p className="project-client mb-3">{project.client}</p>}
                             <TitleTag className="text-3xl sm:text-4xl">{project.title}</TitleTag>
                             {showDescription && project.description && (
                                 <p className="mt-5 text-lg">{project.description}</p>
