@@ -25,15 +25,27 @@ sections:
       - type: Link
         label: Email me
         url: 'mailto:pasumarthi.kumar@gmail.com'
+        showIcon: true
+        icon: mail
+        iconPosition: left
       - type: Link
         label: View GitHub
         url: 'https://github.com/pvpavankumar'
+        showIcon: true
+        icon: github
+        iconPosition: left
       - type: Link
         label: Connect on LinkedIn
         url: 'https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419'
+        showIcon: true
+        icon: linkedin
+        iconPosition: left
       - type: Link
         label: Download résumé
         url: '/venkata-pavan-kumar-resume.pdf'
+        showIcon: true
+        icon: download
+        iconPosition: left
     styles:
       self:
         height: auto
@@ -41,6 +53,23 @@ sections:
         margin: [mt-0, mb-0, ml-0, mr-0]
         padding: [pt-24, pb-24, pl-4, pr-4]
         flexDirection: row
+        textAlign: left
+  - type: FeaturedItemsSection
+    elementId: collaboration-options
+    title: Where I can add value
+    subtitle: Conversations are most useful when they begin with a concrete platform, product, or team challenge.
+    colors: colors-f
+    items:
+      - { type: FeaturedItem, title: 'Architecture', subtitle: 'Modernize complex frontend platforms', text: 'Scalable React architecture, headless experiences, performance, accessibility, and integration strategy.', styles: { self: { textAlign: left } } }
+      - { type: FeaturedItem, title: 'Leadership', subtitle: 'Grow engineering capability', text: 'Technical direction, mentoring, quality systems, architecture reviews, and cross-functional alignment.', styles: { self: { textAlign: left } } }
+      - { type: FeaturedItem, title: 'AI delivery', subtitle: 'Apply AI to practical workflows', text: 'Agentic and generative AI solutions that reduce operational effort while preserving expert oversight.', styles: { self: { textAlign: left } } }
+    columns: 3
+    spacingX: 24
+    spacingY: 24
+    styles:
+      self:
+        width: wide
+        padding: [pt-20, pb-20, pl-4, pr-4]
         textAlign: left
   - type: TextSection
     variant: variant-a
