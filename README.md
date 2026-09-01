@@ -1,8 +1,6 @@
-# Netlify Developer Portfolio Starter (auto-annotated)
+# Pavan Kumar Portfolio
 
-![Developer Portfolio](https://assets.stackbit.com/docs/personal-nextjs-starter-thumb.png)
-
-This is a full-fledged portfolio website built with Next.js, Tailwind CSS, [visual editor](https://docs.netlify.com/visual-editor/overview/) and the [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
+Professional portfolio for Venkata Pavan Kumar Pasumarthi, a Staff Frontend Engineer and UI Engineering Leader. Built with Next.js, Tailwind CSS, [Netlify Visual Editor](https://docs.netlify.com/visual-editor/overview/), and the Git Content Source.
 
 The codebase showcases **how to apply annotations at scale**, meaning: how to make much of your components [highlightable in the visual editor](https://docs.netlify.com/visual-editor/visual-editing/inline-editor/) through data attributes without manually adding code throughout the codebase.
 
@@ -11,13 +9,9 @@ The codebase showcases **how to apply annotations at scale**, meaning: how to ma
 1. Adding an annotation property to the content objects at they're loaded (see `src/utils/content.ts`)
 1. When rendering the page, each content sub-object is dynamically matched to the appropriate component. At this point, wrap each component with an annotation, based on the abovementioned content property. See `src/components/components-registry.tsx`.
 
-**⚡ Demo:** [auto-annotated-portfolio.netlify.app](https://auto-annotated-portfolio.netlify.app)
-
 ## Deploying to Netlify
 
-If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/auto-annotated-portfolio)
+Import `pvpavankumar/pavan-kumar-pv-portfolio` into Netlify. The included `netlify.toml` contains the project build configuration.
 
 ## Getting Started
 
@@ -26,7 +20,7 @@ The typical development process is to begin by working locally. Clone this repos
 Run the Next.js development server:
 
 ```txt
-cd auto-annotated-portfolio
+cd pavan-kumar-pv-portfolio
 npm run dev
 ```
 
