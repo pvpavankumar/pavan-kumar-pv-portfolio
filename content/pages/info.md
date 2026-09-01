@@ -10,43 +10,68 @@ backgroundImage:
   backgroundRepeat: no-repeat
   opacity: 75
 sections:
-  - elementId: ''
+  - elementId: about-hero
     colors: colors-f
     backgroundSize: full
+    title: Staff frontend engineering. Executive-level impact.
+    subtitle: Architecture, technical leadership, and AI-enabled delivery for complex enterprise platforms.
     text: >+
-      # Staff frontend engineering with a leadership mindset
-
-      I’m **Venkata Pavan Kumar Pasumarthi**, a staff-level frontend engineer
-      and UI engineering leader based in Hyderabad, India. Across 13+ years at
+      I’m **Venkata Pavan Kumar Pasumarthi**, a Staff Frontend Engineer and UI
+      Engineering Leader based in Hyderabad, India. Across 13+ years at
       ServiceNow, Deloitte Digital, Infosys, and Tata Consultancy Services, I’ve
-      architected enterprise platforms, led teams of up to 15 engineers, and
-      translated complex product requirements into scalable customer experiences.
+      designed scalable digital platforms and led engineering teams of up to 15.
 
-      My work sits at the intersection of **frontend architecture, digital
-      platforms, engineering excellence, and AI-enabled delivery**. I stay close
-      to implementation while setting technical direction, mentoring engineers,
-      reviewing architecture, partnering with product and design, and explaining
-      trade-offs clearly to client and executive stakeholders.
-
-    media:
-      type: ImageBlock
-      url: /images/about.jpg
-      altText: Abstract technology workspace
+      I combine hands-on architecture with clear technical decision-making,
+      mentorship, product partnership, accessibility, performance engineering,
+      and practical AI automation.
+    actions:
+      - { type: Link, label: Explore my projects, url: '/projects', showIcon: true, icon: briefcase, iconPosition: left }
+      - { type: Link, label: Download résumé, url: '/venkata-pavan-kumar-resume.pdf', showIcon: true, icon: download, iconPosition: left }
     styles:
       self:
         height: auto
         width: wide
         margin: [mt-0, mb-0, ml-0, mr-0]
-        padding: [pt-16, pb-12, pl-4, pr-4]
+        padding: [pt-24, pb-24, pl-4, pr-4]
         textAlign: left
     type: HeroSection
-  - type: DividerSection
+  - type: FeaturedItemsSection
+    elementId: leadership-impact
+    colors: colors-f
+    subtitle: Career impact at a glance
+    items:
+      - type: FeaturedItem
+        title: 13+
+        subtitle: Years in frontend engineering
+        text: Enterprise platforms across product, consulting, and delivery organizations.
+        styles:
+          self: { textAlign: left }
+      - type: FeaturedItem
+        title: 15
+        subtitle: Engineers led and mentored
+        text: Technical direction, architecture reviews, quality standards, and career development.
+        styles:
+          self: { textAlign: left }
+      - type: FeaturedItem
+        title: 50%
+        subtitle: Lower application latency
+        text: Performance-led modernization of complex enterprise customer experiences.
+        styles:
+          self: { textAlign: left }
+      - type: FeaturedItem
+        title: 50%
+        subtitle: Less manual presales effort
+        text: GenAI-assisted workflows designed to augment expert decision-making.
+        styles:
+          self: { textAlign: left }
+    columns: 4
+    spacingX: 24
+    spacingY: 24
     styles:
       self:
         width: wide
-        padding: [pt-8, pb-8, pl-4, pr-4]
-        borderWidth: 1
-        borderStyle: solid
+        padding: [pt-16, pb-16, pl-4, pr-4]
+        textAlign: left
   - type: LabelsSection
     colors: colors-f
     subtitle: Core expertise
