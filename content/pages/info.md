@@ -134,6 +134,11 @@ sections:
           self: { textAlign: left }
       - type: FeaturedItem
         actions:
+          - { type: Link, label: LinkedIn, url: 'https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419' }
+        styles:
+          self: { textAlign: left }
+      - type: FeaturedItem
+        actions:
           - { type: Link, label: Email, url: 'mailto:pasumarthi.kumar@gmail.com' }
         styles:
           self: { textAlign: left }
@@ -142,7 +147,7 @@ sections:
           - { type: Link, label: Download résumé (PDF), url: '/venkata-pavan-kumar-resume.pdf' }
         styles:
           self: { textAlign: left }
-    columns: 3
+    columns: 4
     spacingX: 64
     spacingY: 16
     styles:
