@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap')
 layer(base);
 
 @import 'tailwindcss';
@@ -20,6 +20,8 @@ layer(base);
     }
     body {
         @apply flex flex-col min-h-screen;
+        background: #f7f8fa;
+        letter-spacing: -0.01em;
     }
     body > div {
         @apply flex flex-col grow;
@@ -35,6 +37,8 @@ layer(base);
         line-height: 1.15;
         font-weight: var(--theme-heading-weight);
         text-transform: var(--theme-heading-case);
+        font-family: 'Manrope', sans-serif;
+        letter-spacing: -0.035em;
     }
 
     b,
@@ -96,6 +100,155 @@ layer(base);
     }
     li data:has([class*='link-fill']) {
         @apply inline-flex;
+    }
+}
+
+@layer components {
+    header {
+        background: rgba(11, 20, 36, 0.94);
+        color: #f5f7fa;
+        border-color: rgba(255, 255, 255, 0.12) !important;
+        backdrop-filter: blur(14px);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+
+    header > div,
+    header [class*='border-'] {
+        border-color: rgba(255, 255, 255, 0.12) !important;
+    }
+
+    header a {
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+    }
+
+    header a:hover {
+        color: #9fc5e8;
+    }
+
+    main > [data-theme]:first-child {
+        position: relative;
+        overflow: hidden;
+    }
+
+    main > [data-theme]:first-child::after {
+        content: '';
+        position: absolute;
+        inset: auto -8rem -12rem auto;
+        width: 32rem;
+        height: 32rem;
+        border: 1px solid rgba(159, 197, 232, 0.18);
+        border-radius: 9999px;
+        box-shadow: 0 0 0 5rem rgba(159, 197, 232, 0.025), 0 0 0 10rem rgba(159, 197, 232, 0.018);
+        pointer-events: none;
+    }
+
+    main h1 {
+        max-width: 18ch;
+        font-size: clamp(3rem, 6vw, 6rem) !important;
+        line-height: 1.02;
+    }
+
+    main h2 {
+        font-size: clamp(2.25rem, 4vw, 4rem) !important;
+    }
+
+    main p {
+        line-height: 1.72;
+    }
+
+    main [data-theme='colors-f'] {
+        background: rgba(247, 248, 250, 0.96);
+        color: #162033;
+    }
+
+    main [data-theme='colors-f']:first-child {
+        background: linear-gradient(115deg, rgba(11, 20, 36, 0.97), rgba(23, 50, 78, 0.92));
+        color: #f5f7fa;
+    }
+
+    main [data-theme='colors-f']:first-child p {
+        color: #c4cfda;
+        max-width: 54rem;
+    }
+
+    main [data-theme='colors-f']:first-child a {
+        color: #f5f7fa;
+    }
+
+    main [data-theme='colors-f']:not(:first-child) + [data-theme='colors-f'] {
+        border-top: 1px solid #dde3ea;
+    }
+
+    main a.group {
+        padding: 1rem 1rem 1.75rem;
+        border: 1px solid #dce2e9;
+        border-radius: 0.75rem;
+        background: #ffffff;
+        box-shadow: 0 8px 30px rgba(20, 36, 58, 0.06);
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    main a.group:hover {
+        transform: translateY(-4px);
+        border-color: #8eb1d3;
+        box-shadow: 0 16px 38px rgba(20, 36, 58, 0.11);
+    }
+
+    main a.group img {
+        border-radius: 0.5rem;
+        filter: saturate(0.72) contrast(1.04);
+    }
+
+    main a.group h2,
+    main a.group h3 {
+        color: #132238;
+        font-size: clamp(1.5rem, 2.1vw, 2.25rem) !important;
+    }
+
+    main a.group p {
+        color: #53657a;
+        font-size: 1rem;
+    }
+
+    main a.group span.rounded-full {
+        border-width: 1px;
+        color: #1f4d7a;
+        box-shadow: none;
+    }
+
+    main .prose {
+        color: #3f4f62;
+    }
+
+    main .prose a {
+        color: #1f4d7a;
+        text-decoration-color: #9fc5e8;
+        text-underline-offset: 0.2em;
+    }
+
+    footer {
+        background: #0b1424;
+        color: #d9e1e9;
+    }
+
+    footer > div {
+        border-color: #314054 !important;
+    }
+
+    footer a:hover {
+        color: #9fc5e8;
+    }
+
+    @media (max-width: 768px) {
+        main h1 {
+            font-size: clamp(2.6rem, 13vw, 4rem) !important;
+        }
+
+        main a.group {
+            padding: 0.75rem 0.75rem 1.4rem;
+        }
     }
 }
 
