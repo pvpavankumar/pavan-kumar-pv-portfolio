@@ -11,7 +11,7 @@
       { "type": "Link", "label": "About", "url": "/info" },
       { "type": "Link", "label": "Projects", "url": "/projects" },
       { "type": "Link", "label": "Download résumé", "url": "/venkata-pavan-kumar-resume.pdf" },
-      { "type": "Link", "label": "Contact", "url": "mailto:pasumarthi.kumar@gmail.com" }
+      { "type": "Link", "label": "Contact", "url": "/contact" }
     ],
     "socialLinks": [
       {
@@ -30,7 +30,7 @@
       { "type": "Link", "label": "About", "url": "/info", "altText": "" },
       { "type": "Link", "label": "Projects", "url": "/projects", "altText": "" },
       { "type": "Link", "label": "Download résumé", "url": "/venkata-pavan-kumar-resume.pdf", "altText": "Download Pavan Kumar's résumé as a PDF" },
-      { "type": "Link", "label": "Contact", "url": "mailto:pasumarthi.kumar@gmail.com", "altText": "" },
+      { "type": "Link", "label": "Contact", "url": "/contact", "altText": "Contact Pavan Kumar" },
       { "type": "Link", "label": "GitHub", "url": "https://github.com/pvpavankumar", "altText": "Pavan Kumar on GitHub" }
     ],
     "contacts": {
