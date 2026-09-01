@@ -24,16 +24,16 @@ export default function FormBlock(props) {
     return (
         <Annotated content={props}>
             <form className={className} name={elementId} id={elementId} onSubmit={handleSubmit} ref={formRef}>
-                <div className="grid gap-6 sm:grid-cols-2">
+                <div className="grid gap-5 sm:grid-cols-2">
                     <input type="hidden" name="form-name" value={elementId} />
                     {fields.map((field, index) => {
                         return <DynamicComponent key={index} {...field} />;
                     })}
                 </div>
-                <div className={classNames('mt-8', mapStyles({ textAlign: styles.self?.textAlign ?? 'left' }))}>
+                <div className={classNames('mt-6', mapStyles({ textAlign: styles.self?.textAlign ?? 'left' }))}>
                     <button
                         type="submit"
-                        className="inline-flex items-center justify-center px-5 py-4 text-lg transition border-2 border-current hover:bottom-shadow-6 hover:-translate-y-1.5"
+                        className="inline-flex items-center justify-center px-5 py-3.5 text-base font-semibold transition border border-current rounded-md hover:-translate-y-0.5"
                     >
                         {submitLabel}
                     </button>
