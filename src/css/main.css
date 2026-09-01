@@ -718,3 +718,37 @@ layer(base);
         }
 
         a:hover {
+            @apply no-underline;
+        }
+
+        :where(h1, h2, h3, h4, h5, h6) {
+            font-weight: var(--theme-heading-weight);
+            line-height: 1.15;
+        }
+
+        blockquote p:first-of-type::before,
+        blockquote p:last-of-type::after {
+            content: none;
+        }
+    }
+}
+
+@utility bottom-shadow-* {
+    box-shadow: 0 calc(--value(integer) * 1px) 0 0 currentColor;
+}
+
+@utility link-fill {
+    @apply transition-all text-main;
+    background-image: linear-gradient(
+        to bottom,
+        var(--background-color-inverse) 0%,
+        var(--background-color-inverse) 100%
+    );
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+
+    &:hover {
+        @apply text-inverse;
+        background-size: 100% 100%;
+    }
+}
