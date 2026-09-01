@@ -20,15 +20,11 @@ projectFeed:
   styles:
     self:
       width: narrow
-      padding:
-        - pt-0
-        - pl-4
-        - pr-4
-        - pb-12
+      padding: [pt-0, pl-4, pr-4, pb-12]
 topSections:
   - type: HeroSection
-    title: Projects
-    subtitle: ''
+    title: Selected work
+    subtitle: Enterprise platform initiatives with measurable customer and engineering outcomes. Client-sensitive details are intentionally omitted.
     actions: []
     colors: colors-f
     backgroundSize: full
@@ -37,56 +33,40 @@ topSections:
       self:
         height: auto
         width: narrow
-        padding:
-          - pt-16
-          - pb-16
-          - pl-4
-          - pr-4
+        padding: [pt-16, pb-16, pl-4, pr-4]
         flexDirection: row
         textAlign: left
 bottomSections:
   - type: ContactSection
     backgroundSize: full
-    title: "Let’s talk... \U0001F4AC"
+    title: "Interested in working together? Let’s talk."
     colors: colors-f
     form:
       type: FormBlock
-      elementId: sign-up-form
+      elementId: contact-form
       fields:
-        - name: firstName
-          label: First Name
+        - name: name
+          label: Name
           hideLabel: true
-          placeholder: First Name
+          placeholder: Your name
           isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
           width: 1/2
           type: TextFormControl
         - name: email
           label: Email
           hideLabel: true
-          placeholder: Email
+          placeholder: Work email
           isRequired: true
-          width: full
+          width: 1/2
           type: EmailFormControl
         - name: message
           label: Message
           hideLabel: true
-          placeholder: Tell me about your project
+          placeholder: Tell me about the opportunity or challenge
           isRequired: true
           width: full
           type: TextareaFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve my words
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
+      submitLabel: Send message
       styles:
         self:
           textAlign: center
@@ -94,16 +74,8 @@ bottomSections:
       self:
         height: auto
         width: narrow
-        margin:
-          - mt-0
-          - mb-0
-          - ml-4
-          - mr-4
-        padding:
-          - pt-24
-          - pb-24
-          - pr-4
-          - pl-4
+        margin: [mt-0, mb-0, ml-4, mr-4]
+        padding: [pt-24, pb-24, pr-4, pl-4]
         flexDirection: row
         textAlign: left
 ---
