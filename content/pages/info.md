@@ -99,6 +99,7 @@ sections:
     colors: colors-f
     items:
       - type: FeaturedItem
+        elementId: experience-timeline
         subtitle: Experience
         text: |-
           **2025–2026 · ServiceNow**
