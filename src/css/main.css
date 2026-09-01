@@ -118,6 +118,10 @@ layer(base);
         box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
     }
 
+    header.sticky {
+        z-index: 50;
+    }
+
     header > div,
     header [class*='border-'] {
         border-color: rgba(255, 255, 255, 0.12) !important;
@@ -316,6 +320,169 @@ layer(base);
         transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
     }
 
+    .project-client {
+        display: inline-flex;
+        width: fit-content;
+        padding: 0.38rem 0.65rem;
+        border: 1px solid #c9d7e5;
+        border-radius: 9999px;
+        background: #eef4f9;
+        color: #1f4d7a !important;
+        font-size: 0.72rem !important;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        line-height: 1.2 !important;
+        text-transform: uppercase;
+    }
+
+    #home-hero {
+        min-height: 46rem;
+    }
+
+    #home-hero::before {
+        content: '13+ YEARS  •  ARCHITECTURE  •  LEADERSHIP  •  AI DELIVERY';
+        position: absolute;
+        right: 4rem;
+        bottom: 2.5rem;
+        color: rgba(220, 232, 243, 0.5);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+    }
+
+    #home-hero a,
+    #contact-intro a {
+        padding: 0.9rem 1.1rem;
+        border: 1px solid rgba(245, 247, 250, 0.42);
+        border-radius: 0.45rem;
+        box-shadow: none;
+    }
+
+    #home-hero a:first-child,
+    #contact-intro a:first-child {
+        background: #f5f7fa;
+        color: #132238;
+    }
+
+    #home-impact > div > p,
+    #leadership-impact > div > p {
+        color: #1f4d7a;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    #home-impact > div > div.grid > div,
+    #collaboration-options > div > div.grid > div {
+        padding: 1.5rem;
+        border: 1px solid #dce2e9;
+        border-radius: 0.75rem;
+        background: #ffffff;
+        box-shadow: 0 8px 26px rgba(20, 36, 58, 0.055);
+    }
+
+    #home-impact h2 {
+        color: #1f4d7a;
+        font-size: clamp(2.25rem, 4vw, 3.5rem) !important;
+    }
+
+    #home-impact h3,
+    #collaboration-options h3 {
+        color: #162033;
+        font-size: 1.05rem;
+        letter-spacing: -0.015em;
+    }
+
+    #leadership-model {
+        background: #101d30;
+        color: #f5f7fa;
+    }
+
+    #leadership-model :where(h2, h3, p),
+    #leadership-model .prose {
+        color: #f5f7fa;
+    }
+
+    #leadership-model > div > div.grid > div {
+        position: relative;
+        padding: 2rem;
+        border: 1px solid rgba(159, 197, 232, 0.22);
+        border-radius: 0.75rem;
+        background: rgba(255, 255, 255, 0.035);
+        overflow: visible;
+    }
+
+    #leadership-model > div > div.grid > div::after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 2rem;
+        width: 3rem;
+        height: 2px;
+        background: #9fc5e8;
+    }
+
+    #leadership-model article > h3 {
+        color: #9fc5e8;
+        font-size: 0.82rem;
+        letter-spacing: 0.14em;
+    }
+
+    #leadership-model article > p {
+        margin-top: 1rem;
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.35rem;
+        font-weight: 700;
+    }
+
+    #home-capabilities {
+        background: #dce8f3;
+    }
+
+    #home-capabilities > div > div {
+        gap: 0.75rem;
+        margin-top: 2.5rem;
+    }
+
+    #home-capabilities > div > div > div {
+        padding: 0.7rem 1rem;
+        border: 1px solid #b9cadb;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.62);
+        color: #1f4d7a;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    #project-gallery a.group {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #project-gallery a.group > div:last-child,
+    #project-gallery a.group > span:last-child {
+        margin-top: auto;
+    }
+
+    #collaboration-options {
+        background: #eef3f7;
+    }
+
+    #collaboration-options article > h3 {
+        color: #1f4d7a;
+        font-size: 0.78rem;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+    }
+
+    #collaboration-options article > p {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
     main a.group:hover {
         transform: translateY(-4px);
         border-color: #8eb1d3;
@@ -401,6 +568,14 @@ layer(base);
 
         #about-hero > div > div {
             max-width: 100%;
+        }
+
+        #home-hero {
+            min-height: auto;
+        }
+
+        #home-hero::before {
+            display: none;
         }
     }
 }
