@@ -2,6 +2,8 @@ import classNames from 'classnames';
 import Markdown from 'markdown-to-jsx';
 
 import { Action } from '@/components/atoms';
+import MailIcon from '@/components/svgs/mail';
+import MapPinIcon from '@/components/svgs/map-pin';
 
 export default function Footer(props) {
     const { primaryLinks = [], contacts, copyrightText, styles = {} } = props;
@@ -56,14 +58,16 @@ function Contacts(props) {
                 </p>
             )}
             {email && (
-                <p>
+                <p className="flex items-center gap-3">
+                    <MailIcon className="w-5 h-5 shrink-0 fill-current" />
                     <a href={`mailto:${email}`} aria-label={emailAltText}>
                         {email}
                     </a>
                 </p>
             )}
             {address && (
-                <p>
+                <p className="flex items-center gap-3">
+                    <MapPinIcon className="w-5 h-5 shrink-0 fill-current" />
                     <a
                         href={`https://www.google.com/maps/search/${encodeURIComponent(address)}`}
                         aria-label={addressAltText}
