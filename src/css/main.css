@@ -994,6 +994,59 @@ layer(base);
         margin-top: 2rem;
     }
 
+    /* The builder can be the first themed section on the page. These scoped
+       colors intentionally override the dark-hero defaults used elsewhere. */
+    #cover-letter-builder .cover-letter-heading h2,
+    #cover-letter-builder .cover-letter-form-title h3 {
+        color: #162033;
+    }
+
+    #cover-letter-builder .cover-letter-heading > p {
+        color: #4b5d73;
+    }
+
+    #cover-letter-builder .cover-letter-form-title p,
+    #cover-letter-builder .cover-letter-privacy {
+        color: #53657a;
+    }
+
+    #cover-letter-builder .cover-letter-form label {
+        color: #25364b;
+    }
+
+    #cover-letter-builder .cover-letter-form input,
+    #cover-letter-builder .cover-letter-form textarea {
+        color: #162033;
+        background: #ffffff;
+    }
+
+    #cover-letter-builder .cover-letter-form :where(input, textarea)::placeholder {
+        color: #66758a;
+        opacity: 1;
+    }
+
+    #cover-letter-builder .cover-letter-preview,
+    #cover-letter-builder .cover-letter-preview > p,
+    #cover-letter-builder .cover-letter-preview strong {
+        color: #25354a;
+    }
+
+    #cover-letter-builder .cover-letter-preview header h3 {
+        color: #15283e;
+    }
+
+    #cover-letter-builder .cover-letter-preview header p {
+        color: #53657a;
+    }
+
+    #cover-letter-builder .cover-letter-primary {
+        color: #ffffff;
+    }
+
+    #cover-letter-builder .cover-letter-secondary {
+        color: #163f68;
+    }
+
     @media (max-width: 900px) {
         .cover-letter-builder {
             grid-template-columns: 1fr;
