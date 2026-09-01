@@ -16,8 +16,8 @@ layer(base);
 
 :root {
     --space-page-gutter: clamp(1rem, 3vw, 2rem);
-    --space-section: clamp(4rem, 7vw, 6rem);
-    --space-section-hero: clamp(5rem, 9vw, 8rem);
+    --space-section: clamp(2.75rem, 4.5vw, 4rem);
+    --space-section-hero: clamp(3.75rem, 6vw, 5.5rem);
     --space-stack-sm: 0.75rem;
     --space-stack-md: 1.5rem;
     --space-stack-lg: 2.5rem;
@@ -194,13 +194,13 @@ layer(base);
     }
 
     main h1 {
-        max-width: 18ch;
-        font-size: clamp(3rem, 6vw, 6rem) !important;
+        max-width: 20ch;
+        font-size: clamp(2.75rem, 5vw, 5rem) !important;
         line-height: 1.02;
     }
 
     main h2 {
-        font-size: clamp(2.25rem, 4vw, 4rem) !important;
+        font-size: clamp(2rem, 3.2vw, 3.35rem) !important;
     }
 
     main p {
@@ -247,7 +247,7 @@ layer(base);
     }
 
     #about-hero {
-        min-height: 42rem;
+        min-height: 32rem;
         isolation: isolate;
     }
 
@@ -323,7 +323,7 @@ layer(base);
     }
 
     #experience-timeline > p:first-of-type {
-        margin-bottom: 2rem;
+        margin-bottom: 1.35rem;
         color: #1f4d7a;
         font-size: 0.8rem;
         font-weight: 700;
@@ -354,7 +354,7 @@ layer(base);
     }
 
     #experience-timeline .prose > p:has(> strong):not(:first-child) {
-        margin-top: 2.25rem;
+        margin-top: 1.4rem;
     }
 
     #experience-timeline .prose > p:has(> strong)::before {
@@ -374,7 +374,7 @@ layer(base);
         margin-bottom: 0;
         color: #53657a;
         font-size: 0.98rem;
-        line-height: 1.7;
+        line-height: 1.55;
     }
 
     #connect-panel {
@@ -389,9 +389,9 @@ layer(base);
     #connect-panel article {
         display: flex;
         height: 100%;
-        min-height: 18rem;
+        min-height: 14rem;
         flex-direction: column;
-        padding: 1.5rem;
+        padding: 1.2rem;
         border: 1px solid #d6e0ea;
         border-radius: 0.75rem;
         background: #ffffff;
@@ -426,7 +426,7 @@ layer(base);
 
     #connect-panel article > div:last-child {
         margin-top: auto;
-        padding-top: 1.5rem;
+        padding-top: 1rem;
     }
 
     #connect-panel article a {
@@ -491,7 +491,7 @@ layer(base);
     }
 
     #home-hero {
-        min-height: 42rem;
+        min-height: 34rem;
     }
 
     #home-hero::before {
@@ -530,7 +530,7 @@ layer(base);
 
     #home-impact > div > div.grid > div,
     #collaboration-options > div > div.grid > div {
-        padding: 1.5rem;
+        padding: 1.2rem;
         border: 1px solid #dce2e9;
         border-radius: 0.75rem;
         background: #ffffff;
@@ -575,7 +575,7 @@ layer(base);
 
     #leadership-model > div > div.grid > div {
         position: relative;
-        padding: 2rem;
+        padding: 1.4rem;
         border: 1px solid rgba(159, 197, 232, 0.22);
         border-radius: 0.75rem;
         background: rgba(255, 255, 255, 0.035);
@@ -698,6 +698,8 @@ layer(base);
     footer {
         padding-right: var(--space-page-gutter) !important;
         padding-left: var(--space-page-gutter) !important;
+        padding-top: 2.75rem !important;
+        padding-bottom: 2.75rem !important;
     }
 
     footer > div {
@@ -753,13 +755,13 @@ layer(base);
         }
 
         main > [data-theme]:not(:first-child) {
-            padding-top: 3.5rem !important;
-            padding-bottom: 3.5rem !important;
+            padding-top: 2.5rem !important;
+            padding-bottom: 2.5rem !important;
         }
 
         main > [data-theme]:first-child {
-            padding-top: 4.5rem !important;
-            padding-bottom: 4.5rem !important;
+            padding-top: 3.25rem !important;
+            padding-bottom: 3.25rem !important;
         }
     }
 }
@@ -799,12 +801,12 @@ layer(base);
 
     .cover-letter-heading {
         max-width: 780px;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.75rem;
     }
 
     .cover-letter-heading h2 {
         margin-top: 0.8rem;
-        font-size: clamp(2.5rem, 4.6vw, 4.75rem);
+        font-size: clamp(2.35rem, 3.8vw, 3.75rem);
         letter-spacing: -0.045em;
     }
 
@@ -943,7 +945,7 @@ layer(base);
 
     .cover-letter-preview {
         position: relative;
-        min-height: 720px;
+        min-height: 610px;
         padding: clamp(2rem, 4vw, 4.5rem);
         color: #25354a;
         font-family: Georgia, 'Times New Roman', serif;

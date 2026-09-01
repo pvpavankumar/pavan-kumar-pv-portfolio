@@ -70,7 +70,7 @@ export default function CoverLetterSection(props) {
                     <label>Target role<input value={role} onChange={(event) => setRole(event.target.value)} /></label>
                     <label>Hiring manager<input value={hiringManager} onChange={(event) => setHiringManager(event.target.value)} /></label>
                     <label>Role priorities<textarea value={priorities} onChange={(event) => setPriorities(event.target.value)} rows={3} /></label>
-                    <label>Your tailored message<textarea value={customMessage} onChange={(event) => setCustomMessage(event.target.value)} rows={6} /></label>
+                    <label>Your tailored message<textarea value={customMessage} onChange={(event) => setCustomMessage(event.target.value)} rows={4} /></label>
                     <div className="cover-letter-actions">
                         <button type="button" className="cover-letter-primary" onClick={downloadWord}><DownloadIcon className="h-5 w-5" /> Download Word</button>
                         <button type="button" className="cover-letter-secondary" onClick={() => window.print()}><DocumentIcon className="h-5 w-5" /> Print / Save PDF</button>

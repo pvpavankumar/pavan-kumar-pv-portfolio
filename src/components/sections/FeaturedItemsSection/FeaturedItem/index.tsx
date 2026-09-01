@@ -31,7 +31,7 @@ export default function FeaturedItem(props) {
                     <Markdown
                         options={{ forceBlock: true, forceWrapper: true }}
                         className={classNames('prose sm:prose-lg', {
-                            'mt-4': title || subtitle
+                        'mt-3': title || subtitle
                         })}
                     >
                         {text}
@@ -42,7 +42,7 @@ export default function FeaturedItem(props) {
                         className={classNames('flex flex-wrap items-center gap-4', {
                             'justify-center': otherSelfStyles.textAlign === 'center',
                             'justify-end': otherSelfStyles.textAlign === 'right',
-                            'mt-6': title || subtitle || text
+                            'mt-4': title || subtitle || text
                         })}
                     >
                         {actions.map((action, index) => (

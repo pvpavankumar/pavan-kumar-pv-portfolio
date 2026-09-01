@@ -36,7 +36,7 @@ export default function FeaturedItemsSection(props) {
             {items.length > 0 && (
                 <div
                     className={classNames('grid', mapColStyles(columns), {
-                        'mt-10': title || subtitle
+                        'mt-7': title || subtitle
                     })}
                     style={{
                         columnGap: spacingX ? `${spacingX}px` : null,
@@ -50,7 +50,7 @@ export default function FeaturedItemsSection(props) {
             )}
             {actions?.length > 0 && (
                 <div
-                    className={classNames('flex flex-wrap items-center gap-4 mt-10', {
+                    className={classNames('flex flex-wrap items-center gap-4 mt-7', {
                         'justify-center': sectionAlign === 'center',
                         'justify-end': sectionAlign === 'right'
                     })}

@@ -26,7 +26,7 @@ export default function LabelsSection(props) {
             {items.length > 0 && (
                 <div
                     className={classNames('flex flex-wrap gap-3', {
-                        'mt-10': title || subtitle,
+                        'mt-7': title || subtitle,
                         'justify-center': sectionAlign === 'center',
                         'justify-end': sectionAlign === 'right'
                     })}

@@ -84,38 +84,6 @@ sections:
         width: wide
         padding: [pt-20, pb-20, pl-4, pr-4]
         textAlign: left
-  - type: FeaturedItemsSection
-    elementId: leadership-model
-    title: How I create engineering impact
-    subtitle: A practical operating model connecting architecture, teams, and measurable delivery.
-    colors: colors-f
-    items:
-      - type: FeaturedItem
-        title: '01'
-        subtitle: Clarify the system
-        text: Translate customer needs and platform constraints into architecture decisions, success measures, and a delivery path.
-        styles:
-          self: { textAlign: left }
-      - type: FeaturedItem
-        title: '02'
-        subtitle: Raise engineering quality
-        text: Establish reusable patterns, accessibility, performance budgets, automated testing, and review standards that scale.
-        styles:
-          self: { textAlign: left }
-      - type: FeaturedItem
-        title: '03'
-        subtitle: Enable the team
-        text: Mentor engineers, make trade-offs visible, align product and design, and use AI where it removes meaningful friction.
-        styles:
-          self: { textAlign: left }
-    columns: 3
-    spacingX: 28
-    spacingY: 28
-    styles:
-      self:
-        width: wide
-        padding: [pt-24, pb-24, pl-4, pr-4]
-        textAlign: left
   - type: LabelsSection
     elementId: home-capabilities
     title: Platform and leadership capabilities
