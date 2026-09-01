@@ -87,6 +87,12 @@ layer(base);
         --text-color-main: var(--theme-on-complementary);
         --text-color-inverse: var(--theme-complementary);
     }
+    :where([data-theme='colors-f']) {
+        --background-color-main: var(--theme-light);
+        --background-color-inverse: var(--theme-on-light);
+        --text-color-main: var(--theme-on-light);
+        --text-color-inverse: var(--theme-light);
+    }
     :where([data-theme^='colors-']):not([data-theme='colors-f']) {
         @apply bg-main text-main;
     }
@@ -163,18 +169,51 @@ layer(base);
         color: #162033;
     }
 
-    main [data-theme='colors-f']:first-child {
+    main > [data-theme='colors-f']:first-child {
+        --background-color-main: var(--theme-dark);
+        --background-color-inverse: var(--theme-on-dark);
+        --text-color-main: var(--theme-on-dark);
+        --text-color-inverse: var(--theme-dark);
         background: linear-gradient(115deg, rgba(11, 20, 36, 0.97), rgba(23, 50, 78, 0.92));
         color: #f5f7fa;
     }
 
-    main [data-theme='colors-f']:first-child p {
+    main > [data-theme='colors-f']:first-child p {
         color: #c4cfda;
         max-width: 54rem;
     }
 
-    main [data-theme='colors-f']:first-child a {
+    main > [data-theme='colors-f']:first-child a {
         color: #f5f7fa;
+    }
+
+    main [data-theme='colors-f'] :where(p, li, dt, dd, label) {
+        color: #3f4f62;
+    }
+
+    main [data-theme='colors-f'] :where(h1, h2, h3, h4, h5, h6, strong) {
+        color: #162033;
+    }
+
+    main > [data-theme='colors-f']:first-child :where(h1, h2, h3, h4, h5, h6, strong) {
+        color: #f5f7fa;
+    }
+
+    main > [data-theme='colors-f']:first-child :where(p, li, dt, dd, label) {
+        color: #c4cfda;
+    }
+
+    main [data-theme='colors-f'] input,
+    main [data-theme='colors-f'] textarea,
+    main [data-theme='colors-f'] select {
+        background: #ffffff;
+        border-color: #b9c5d2;
+        color: #162033;
+    }
+
+    main [data-theme='colors-f'] :where(input, textarea)::placeholder {
+        color: #6b788a;
+        opacity: 1;
     }
 
     main [data-theme='colors-f']:not(:first-child) + [data-theme='colors-f'] {
