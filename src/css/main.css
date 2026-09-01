@@ -218,6 +218,78 @@ layer(base);
         color: #c4cfda;
     }
 
+    #about-hero {
+        min-height: 42rem;
+        isolation: isolate;
+    }
+
+    #about-hero::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        right: clamp(2rem, 8vw, 9rem);
+        width: clamp(15rem, 30vw, 28rem);
+        aspect-ratio: 1;
+        transform: translateY(-50%);
+        border: 1px solid rgba(159, 197, 232, 0.3);
+        border-radius: 42% 58% 62% 38% / 48% 42% 58% 52%;
+        background:
+            linear-gradient(135deg, rgba(31, 77, 122, 0.72), rgba(11, 20, 36, 0.12)),
+            repeating-linear-gradient(90deg, transparent 0 2.8rem, rgba(159, 197, 232, 0.12) 2.8rem 2.86rem);
+        box-shadow:
+            0 0 0 3rem rgba(159, 197, 232, 0.035),
+            0 0 0 6rem rgba(159, 197, 232, 0.018);
+    }
+
+    #about-hero > div {
+        position: relative;
+        z-index: 1;
+    }
+
+    #about-hero > div > div {
+        max-width: min(62rem, 72%);
+    }
+
+    #about-hero h1 {
+        max-width: 13ch;
+    }
+
+    #about-hero .prose {
+        max-width: 48rem;
+    }
+
+    #about-hero a {
+        padding: 0.9rem 1.1rem;
+        border: 1px solid rgba(245, 247, 250, 0.42);
+        border-radius: 0.45rem;
+        box-shadow: none;
+    }
+
+    #about-hero a:first-child {
+        background: #f5f7fa;
+        color: #132238;
+    }
+
+    #leadership-impact > div > div.grid > div {
+        padding: 1.5rem;
+        border: 1px solid #dce2e9;
+        border-radius: 0.75rem;
+        background: #ffffff;
+        box-shadow: 0 8px 26px rgba(20, 36, 58, 0.055);
+    }
+
+    #leadership-impact h2 {
+        color: #1f4d7a;
+        font-size: clamp(2.25rem, 4vw, 3.5rem) !important;
+    }
+
+    #leadership-impact h3 {
+        color: #162033;
+        font-size: 1.05rem;
+        letter-spacing: -0.015em;
+    }
+
     main [data-theme='colors-f'] input,
     main [data-theme='colors-f'] textarea,
     main [data-theme='colors-f'] select {
@@ -312,6 +384,23 @@ layer(base);
 
         main a.group {
             padding: 0.75rem 0.75rem 1.4rem;
+        }
+
+        #about-hero {
+            min-height: auto;
+        }
+
+        #about-hero::before {
+            top: auto;
+            right: -7rem;
+            bottom: -7rem;
+            width: 18rem;
+            transform: none;
+            opacity: 0.65;
+        }
+
+        #about-hero > div > div {
+            max-width: 100%;
         }
     }
 }
