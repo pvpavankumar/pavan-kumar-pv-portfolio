@@ -14,36 +14,36 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      I’m a developer, digital artist, consultant and a bunch of other
-      impressive titles and buzz words.
+      I architect fast, accessible enterprise experiences—and help engineering
+      teams deliver them at scale.
     subtitle: >-
-      This is my info—I’m sharing it all this with ya’ll to impress you with all
-      the hard work I’ve done in the past few years. Once you’re impressed, you
-      can continue to scroll down to see more details and credentials about me.
+      I’m Venkata Pavan Kumar Pasumarthi, a Staff Frontend Engineer and UI
+      Engineering Leader with 13+ years of experience across React, ServiceNow,
+      SAP CPQ, digital platforms, and AI-enabled delivery. I combine hands-on
+      architecture with technical leadership to turn complex customer journeys
+      into reliable, measurable products.
     styles:
       self:
         height: auto
         width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-36
-          - pb-48
-          - pl-4
-          - pr-4
+        margin: [mt-0, mb-0, ml-0, mr-0]
+        padding: [pt-36, pb-48, pl-4, pr-4]
         flexDirection: row-reverse
         textAlign: left
     type: HeroSection
-    actions: []
+    actions:
+      - type: Link
+        label: Explore my work
+        url: /projects
+      - type: Link
+        label: View my profile
+        url: /info
   - colors: colors-f
     type: FeaturedProjectsSection
     elementId: ''
     actions:
       - type: Link
-        label: See all projects
+        label: See all selected work
         url: /projects
     showDate: false
     showDescription: true
@@ -58,82 +58,52 @@ sections:
       self:
         height: auto
         width: wide
-        padding:
-          - pt-24
-          - pb-24
-          - pl-4
-          - pr-4
+        padding: [pt-24, pb-24, pl-4, pr-4]
         textAlign: left
-    subtitle: Projects
-  - type: FeaturedPostsSection
-    elementId: ''
+    subtitle: Selected enterprise work
+  - type: TextSection
+    variant: variant-a
+    subtitle: Measurable impact
     colors: colors-f
-    variant: variant-d
-    subtitle: Featured Posts
-    showFeaturedImage: false
-    actions:
-      - type: Link
-        label: See all posts
-        url: /blog
-    posts:
-      - content/pages/blog/post-six.md
-      - content/pages/blog/post-four.md
-      - content/pages/blog/post-three.md
-    showDate: true
-    showExcerpt: true
-    showReadMoreLink: true
+    text: |
+      **50% lower application latency · 30% faster page loads · 25% growth in mobile traffic · 50% less manual presales effort**
+
+      These outcomes came from connecting frontend architecture, engineering quality, accessibility, customer insight, and practical AI automation.
     styles:
       self:
-        height: auto
         width: narrow
-        padding:
-          - pt-28
-          - pb-48
-          - pl-4
-          - pr-4
+        padding: [pt-24, pb-24, pl-4, pr-4]
         textAlign: left
   - type: ContactSection
     colors: colors-f
     backgroundSize: full
-    title: "Got an interesting project? Tell me more...\U0001F4AC"
+    title: "Building a digital platform or growing an engineering team? Let’s talk."
     form:
       type: FormBlock
-      elementId: sign-up-form
+      elementId: contact-form
       fields:
-        - name: firstName
-          label: First Name
+        - name: name
+          label: Name
           hideLabel: true
-          placeholder: First Name
+          placeholder: Your name
           isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
           width: 1/2
           type: TextFormControl
         - name: email
           label: Email
           hideLabel: true
-          placeholder: Email
+          placeholder: Work email
           isRequired: true
           width: 1/2
           type: EmailFormControl
-        - name: address
-          label: Address
+        - name: message
+          label: Message
           hideLabel: true
-          placeholder: Address
+          placeholder: Tell me about the opportunity or challenge
           isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve updates
-          isRequired: false
           width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
+          type: TextareaFormControl
+      submitLabel: Send message
       styles:
         self:
           textAlign: center
@@ -141,16 +111,8 @@ sections:
       self:
         height: auto
         width: narrow
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-24
-          - pb-24
-          - pr-4
-          - pl-4
+        margin: [mt-0, mb-0, ml-0, mr-0]
+        padding: [pt-24, pb-24, pr-4, pl-4]
         flexDirection: row
         textAlign: left
 ---
