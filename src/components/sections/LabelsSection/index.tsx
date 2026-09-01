@@ -16,7 +16,7 @@ export default function LabelsSection(props) {
             {subtitle && (
                 <p
                     className={classNames('text-lg sm:text-xl', mapStyles({ textAlign: sectionAlign }), {
-                        'mt-6': title
+                        'mt-4': title
                     })}
                 >
                     {subtitle}
@@ -24,8 +24,8 @@ export default function LabelsSection(props) {
             )}
             {items.length > 0 && (
                 <div
-                    className={classNames('flex flex-wrap gap-6', {
-                        'mt-12 lg:mt-16': title || subtitle,
+                    className={classNames('flex flex-wrap gap-3', {
+                        'mt-10': title || subtitle,
                         'justify-center': sectionAlign === 'center',
                         'justify-end': sectionAlign === 'right'
                     })}
@@ -50,12 +50,12 @@ function LabelItem(props) {
             {url ? (
                 <Link
                     href={url}
-                    className="inline-flex relative text-lg leading-tight no-underline transition rounded-full py-4 px-5 border-2 border-current hover:bottom-shadow-6 hover:-translate-y-1.5"
+                    className="inline-flex relative text-base leading-tight no-underline transition rounded-full py-3 px-4 border border-current hover:-translate-y-0.5"
                 >
                     {label}
                 </Link>
             ) : (
-                <div className="inline-flex px-5 py-4 text-lg leading-tight border-2 border-current rounded-full">
+                <div className="inline-flex px-4 py-3 text-base leading-tight border border-current rounded-full">
                     {label}
                 </div>
             )}
