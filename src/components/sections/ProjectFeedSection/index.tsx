@@ -18,7 +18,7 @@ export default function ProjectFeedSection(props) {
             {subtitle && (
                 <p
                     className={classNames('text-lg sm:text-xl', mapStyles({ textAlign: sectionAlign }), {
-                        'mt-6': title
+                        'mt-4': title
                     })}
                 >
                     {subtitle}
@@ -67,18 +67,18 @@ function ProjectGrid(props) {
     const TitleTag = headingLevel;
     return (
         <div
-            className={classNames('grid gap-y-12', {
+            className={classNames('grid gap-y-8', {
                 'md:grid-cols-2': variant === 'variant-a',
                 'md:grid-cols-3': variant === 'variant-b',
                 'justify-center': variant === 'variant-c',
                 'gap-x-6 lg:gap-x-8': variant !== 'variant-c',
-                'mt-12': hasTopMargin
+                'mt-10': hasTopMargin
             })}
         >
             {projects.map((project, index) => (
                 <Link key={index} href={project} className="block max-w-3xl pb-10 border-b border-current group">
                     {showFeaturedImage && project.featuredImage && (
-                        <div className="w-full mb-6 overflow-hidden aspect-3/2">
+                        <div className="w-full mb-5 overflow-hidden aspect-3/2">
                             <ImageBlock
                                 {...project.featuredImage}
                                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
@@ -92,9 +92,9 @@ function ProjectGrid(props) {
                     )}
                     {project.client && <p className="project-client mb-3">{project.client}</p>}
                     <TitleTag className="text-3xl sm:text-4xl">{project.title}</TitleTag>
-                    {showDescription && project.description && <p className="mt-5 text-lg">{project.description}</p>}
+                    {showDescription && project.description && <p className="mt-4 text-lg">{project.description}</p>}
                     {showReadMoreLink && (
-                        <div className="mt-8">
+                        <div className="mt-6">
                             <span className="inline-flex text-xl transition rounded-full p-4 border-2 border-current group-hover:bottom-shadow-6 group-hover:-translate-y-1.5">
                                 <ArrowUpRightIcon className="fill-current w-icon h-icon" />
                             </span>
