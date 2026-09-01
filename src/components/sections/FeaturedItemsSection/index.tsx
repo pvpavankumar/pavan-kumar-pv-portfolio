@@ -27,7 +27,7 @@ export default function FeaturedItemsSection(props) {
             {subtitle && (
                 <p
                     className={classNames('text-lg sm:text-xl', mapStyles({ textAlign: sectionAlign }), {
-                        'mt-6': title
+                        'mt-4': title
                     })}
                 >
                     {subtitle}
@@ -36,7 +36,7 @@ export default function FeaturedItemsSection(props) {
             {items.length > 0 && (
                 <div
                     className={classNames('grid', mapColStyles(columns), {
-                        'mt-12': title || subtitle
+                        'mt-10': title || subtitle
                     })}
                     style={{
                         columnGap: spacingX ? `${spacingX}px` : null,
