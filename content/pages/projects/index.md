@@ -11,6 +11,7 @@ backgroundImage:
   opacity: 50
 projectFeed:
   type: ProjectFeedSection
+  elementId: project-gallery
   colors: colors-f
   showDate: false
   showDescription: true
@@ -28,7 +29,7 @@ topSections:
     actions: []
     colors: colors-f
     backgroundSize: full
-    elementId: ''
+    elementId: projects-hero
     styles:
       self:
         height: auto
