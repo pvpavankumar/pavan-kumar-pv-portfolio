@@ -26,7 +26,7 @@ export default function FeaturedItem(props) {
                     </div>
                 )}
                 {title && <TitleTag className="text-3xl sm:text-4xl">{title}</TitleTag>}
-                {subtitle && <p className={classNames('text-lg', { 'mt-1': title })}>{subtitle}</p>}
+                {subtitle && <p className={classNames('text-lg', { 'mt-2': title })}>{subtitle}</p>}
                 {text && (
                     <Markdown
                         options={{ forceBlock: true, forceWrapper: true }}
@@ -42,7 +42,7 @@ export default function FeaturedItem(props) {
                         className={classNames('flex flex-wrap items-center gap-4', {
                             'justify-center': otherSelfStyles.textAlign === 'center',
                             'justify-end': otherSelfStyles.textAlign === 'right',
-                            'mt-4': title || subtitle || text
+                            'mt-6': title || subtitle || text
                         })}
                     >
                         {actions.map((action, index) => (
