@@ -10,7 +10,7 @@ backgroundImage:
   backgroundRepeat: no-repeat
   opacity: 75
 sections:
-  - elementId: ''
+  - elementId: home-hero
     colors: colors-f
     backgroundSize: full
     title: >-
@@ -35,9 +35,15 @@ sections:
       - type: Link
         label: Explore my work
         url: /projects
+        showIcon: true
+        icon: briefcase
+        iconPosition: left
       - type: Link
         label: View my profile
         url: /info
+        showIcon: true
+        icon: user
+        iconPosition: left
   - colors: colors-f
     type: FeaturedProjectsSection
     elementId: ''
@@ -61,18 +67,73 @@ sections:
         padding: [pt-24, pb-24, pl-4, pr-4]
         textAlign: left
     subtitle: Selected enterprise work
-  - type: TextSection
-    variant: variant-a
+  - type: FeaturedItemsSection
+    elementId: home-impact
     subtitle: Measurable impact
     colors: colors-f
-    text: |
-      **50% lower application latency · 30% faster page loads · 25% growth in mobile traffic · 50% less manual presales effort**
-
-      These outcomes came from connecting frontend architecture, engineering quality, accessibility, customer insight, and practical AI automation.
+    items:
+      - { type: FeaturedItem, title: '50%', subtitle: 'Lower application latency', text: 'Performance-led platform modernization.', styles: { self: { textAlign: left } } }
+      - { type: FeaturedItem, title: '30%', subtitle: 'Faster page loads', text: 'Bundle, rendering, and delivery optimization.', styles: { self: { textAlign: left } } }
+      - { type: FeaturedItem, title: '25%', subtitle: 'Growth in mobile traffic', text: 'Responsive and accessible customer journeys.', styles: { self: { textAlign: left } } }
+      - { type: FeaturedItem, title: '50%', subtitle: 'Less manual effort', text: 'Practical GenAI-assisted presales workflows.', styles: { self: { textAlign: left } } }
+    columns: 4
+    spacingX: 24
+    spacingY: 24
     styles:
       self:
-        width: narrow
+        width: wide
+        padding: [pt-20, pb-20, pl-4, pr-4]
+        textAlign: left
+  - type: FeaturedItemsSection
+    elementId: leadership-model
+    title: How I create engineering impact
+    subtitle: A practical operating model connecting architecture, teams, and measurable delivery.
+    colors: colors-f
+    items:
+      - type: FeaturedItem
+        title: '01'
+        subtitle: Clarify the system
+        text: Translate customer needs and platform constraints into architecture decisions, success measures, and a delivery path.
+        styles:
+          self: { textAlign: left }
+      - type: FeaturedItem
+        title: '02'
+        subtitle: Raise engineering quality
+        text: Establish reusable patterns, accessibility, performance budgets, automated testing, and review standards that scale.
+        styles:
+          self: { textAlign: left }
+      - type: FeaturedItem
+        title: '03'
+        subtitle: Enable the team
+        text: Mentor engineers, make trade-offs visible, align product and design, and use AI where it removes meaningful friction.
+        styles:
+          self: { textAlign: left }
+    columns: 3
+    spacingX: 28
+    spacingY: 28
+    styles:
+      self:
+        width: wide
         padding: [pt-24, pb-24, pl-4, pr-4]
+        textAlign: left
+  - type: LabelsSection
+    elementId: home-capabilities
+    title: Platform and leadership capabilities
+    colors: colors-f
+    items:
+      - { type: Label, label: Frontend architecture }
+      - { type: Label, label: React & Next.js }
+      - { type: Label, label: ServiceNow }
+      - { type: Label, label: SAP CPQ }
+      - { type: Label, label: Performance engineering }
+      - { type: Label, label: Accessibility }
+      - { type: Label, label: Design systems }
+      - { type: Label, label: GenAI automation }
+      - { type: Label, label: Technical leadership }
+    styles:
+      self:
+        width: wide
+        padding: [pt-20, pb-20, pl-4, pr-4]
         textAlign: left
   - type: ContactSection
     colors: colors-f
