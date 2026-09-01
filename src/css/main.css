@@ -318,6 +318,65 @@ layer(base);
         letter-spacing: -0.015em;
     }
 
+    #experience-timeline {
+        overflow: visible;
+    }
+
+    #experience-timeline > p:first-of-type {
+        margin-bottom: 2rem;
+        color: #1f4d7a;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    #experience-timeline .prose {
+        position: relative;
+        max-width: none;
+        margin-left: 0.45rem;
+        padding-left: 2rem;
+        border-left: 2px solid #c9d7e5;
+    }
+
+    #experience-timeline .prose > p {
+        margin-top: 0;
+    }
+
+    #experience-timeline .prose > p:has(> strong) {
+        position: relative;
+        margin-bottom: 0.65rem;
+        color: #162033;
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        line-height: 1.35;
+    }
+
+    #experience-timeline .prose > p:has(> strong):not(:first-child) {
+        margin-top: 2.25rem;
+    }
+
+    #experience-timeline .prose > p:has(> strong)::before {
+        content: '';
+        position: absolute;
+        top: 0.35rem;
+        left: calc(-2rem - 7px);
+        width: 0.75rem;
+        height: 0.75rem;
+        border: 3px solid #f7f8fa;
+        border-radius: 9999px;
+        background: #1f4d7a;
+        box-shadow: 0 0 0 2px #8eb1d3;
+    }
+
+    #experience-timeline .prose > p:not(:has(> strong)) {
+        margin-bottom: 0;
+        color: #53657a;
+        font-size: 0.98rem;
+        line-height: 1.7;
+    }
+
     main [data-theme='colors-f'] input,
     main [data-theme='colors-f'] textarea,
     main [data-theme='colors-f'] select {
@@ -659,37 +718,3 @@ layer(base);
         }
 
         a:hover {
-            @apply no-underline;
-        }
-
-        :where(h1, h2, h3, h4, h5, h6) {
-            font-weight: var(--theme-heading-weight);
-            line-height: 1.15;
-        }
-
-        blockquote p:first-of-type::before,
-        blockquote p:last-of-type::after {
-            content: none;
-        }
-    }
-}
-
-@utility bottom-shadow-* {
-    box-shadow: 0 calc(--value(integer) * 1px) 0 0 currentColor;
-}
-
-@utility link-fill {
-    @apply transition-all text-main;
-    background-image: linear-gradient(
-        to bottom,
-        var(--background-color-inverse) 0%,
-        var(--background-color-inverse) 100%
-    );
-    background-size: 100% 0%;
-    background-repeat: no-repeat;
-
-    &:hover {
-        @apply text-inverse;
-        background-size: 100% 100%;
-    }
-}
