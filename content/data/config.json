@@ -8,10 +8,10 @@
     "title": "Pavan Kumar",
     "isTitleVisible": true,
     "primaryLinks": [
-      { "type": "Link", "label": "About", "url": "/info" },
-      { "type": "Link", "label": "Projects", "url": "/projects" },
-      { "type": "Link", "label": "Download résumé", "url": "/venkata-pavan-kumar-resume.pdf" },
-      { "type": "Link", "label": "Contact", "url": "/contact" }
+      { "type": "Link", "label": "About", "url": "/info", "showIcon": true, "icon": "user", "iconPosition": "left" },
+      { "type": "Link", "label": "Projects", "url": "/projects", "showIcon": true, "icon": "briefcase", "iconPosition": "left" },
+      { "type": "Link", "label": "Download résumé", "url": "/venkata-pavan-kumar-resume.pdf", "showIcon": true, "icon": "download", "iconPosition": "left" },
+      { "type": "Link", "label": "Contact", "url": "/contact", "showIcon": true, "icon": "mail", "iconPosition": "left" }
     ],
     "socialLinks": [
       {
@@ -34,12 +34,12 @@
   "footer": {
     "type": "Footer",
     "primaryLinks": [
-      { "type": "Link", "label": "About", "url": "/info", "altText": "" },
-      { "type": "Link", "label": "Projects", "url": "/projects", "altText": "" },
-      { "type": "Link", "label": "Download résumé", "url": "/venkata-pavan-kumar-resume.pdf", "altText": "Download Pavan Kumar's résumé as a PDF" },
-      { "type": "Link", "label": "Contact", "url": "/contact", "altText": "Contact Pavan Kumar" },
-      { "type": "Link", "label": "LinkedIn", "url": "https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419", "altText": "Pavan Kumar on LinkedIn" },
-      { "type": "Link", "label": "GitHub", "url": "https://github.com/pvpavankumar", "altText": "Pavan Kumar on GitHub" }
+      { "type": "Link", "label": "About", "url": "/info", "altText": "About Pavan Kumar", "showIcon": true, "icon": "user", "iconPosition": "left" },
+      { "type": "Link", "label": "Projects", "url": "/projects", "altText": "View Pavan Kumar's projects", "showIcon": true, "icon": "briefcase", "iconPosition": "left" },
+      { "type": "Link", "label": "Download résumé", "url": "/venkata-pavan-kumar-resume.pdf", "altText": "Download Pavan Kumar's résumé as a PDF", "showIcon": true, "icon": "download", "iconPosition": "left" },
+      { "type": "Link", "label": "Contact", "url": "/contact", "altText": "Contact Pavan Kumar", "showIcon": true, "icon": "mail", "iconPosition": "left" },
+      { "type": "Link", "label": "LinkedIn", "url": "https://linkedin.com/in/venkata-pavan-kumar-pasumarthi-54929419", "altText": "Pavan Kumar on LinkedIn", "showIcon": true, "icon": "linkedin", "iconPosition": "left" },
+      { "type": "Link", "label": "GitHub", "url": "https://github.com/pvpavankumar", "altText": "Pavan Kumar on GitHub", "showIcon": true, "icon": "github", "iconPosition": "left" }
     ],
     "contacts": {
       "type": "ContactBlock",
