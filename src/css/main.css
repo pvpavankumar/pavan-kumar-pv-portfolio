@@ -386,7 +386,7 @@ layer(base);
         color: #53657a;
     }
 
-    #connect-panel > div > div.grid > div {
+    #connect-panel article {
         display: flex;
         height: 100%;
         min-height: 18rem;
@@ -399,7 +399,7 @@ layer(base);
         transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
     }
 
-    #connect-panel > div > div.grid > div:hover {
+    #connect-panel article:hover {
         transform: translateY(-3px);
         border-color: #8eb1d3;
         box-shadow: 0 14px 34px rgba(20, 36, 58, 0.1);
